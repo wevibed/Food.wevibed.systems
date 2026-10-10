@@ -1,0 +1,276 @@
+{
+  "items": [
+    {
+      "id": "rice",
+      "name": "Long Grain Rice",
+      "category": "Groceries",
+      "featured": true,
+      "tint": 0,
+      "description": "Clean, polished rice.",
+      "availability": "in",
+      "price": 3.2,
+      "packs": [
+        {
+          "label": "2 kg",
+          "price": 3.2
+        },
+        {
+          "label": "5 kg",
+          "price": 7.5
+        },
+        {
+          "label": "10 kg",
+          "price": 14
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "cooking-oil",
+      "name": "Cooking Oil",
+      "category": "Groceries",
+      "featured": true,
+      "tint": 0,
+      "description": "Refined vegetable oil.",
+      "availability": "in",
+      "price": 2.8,
+      "packs": [
+        {
+          "label": "750 ml",
+          "price": 2.8
+        },
+        {
+          "label": "2 L",
+          "price": 6.9
+        },
+        {
+          "label": "5 L",
+          "price": 15
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "maize-meal",
+      "name": "Maize Meal",
+      "category": "Groceries",
+      "featured": false,
+      "tint": 0,
+      "description": "Roller meal, sold in bags.",
+      "availability": "in",
+      "price": 4.5,
+      "packs": [
+        {
+          "label": "5 kg",
+          "price": 4.5
+        },
+        {
+          "label": "10 kg",
+          "price": 8.6
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "white-sugar",
+      "name": "White Sugar",
+      "category": "Groceries",
+      "featured": false,
+      "tint": 5,
+      "description": "Fine white sugar.",
+      "availability": "low",
+      "price": 3.4,
+      "packs": [
+        {
+          "label": "2 kg",
+          "price": 3.4
+        },
+        {
+          "label": "10 kg",
+          "price": 15.5
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "peanut-butter",
+      "name": "Peanut Butter",
+      "category": "Groceries",
+      "featured": false,
+      "tint": 0,
+      "description": "Smooth or crunchy, ask on WhatsApp.",
+      "availability": "in",
+      "price": 2.6,
+      "packs": [
+        {
+          "label": "400 g",
+          "price": 2.6
+        },
+        {
+          "label": "750 g",
+          "price": 4.4
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "curry-powder",
+      "name": "Curry Powder",
+      "category": "Spices and sauces",
+      "featured": true,
+      "tint": 1,
+      "description": "Medium heat blend.",
+      "availability": "in",
+      "price": 1.2,
+      "packs": [
+        {
+          "label": "100 g",
+          "price": 1.2
+        },
+        {
+          "label": "250 g",
+          "price": 2.7
+        },
+        {
+          "label": "1 kg",
+          "price": 9
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "mixed-spice",
+      "name": "Mixed Spice Seasoning",
+      "category": "Spices and sauces",
+      "featured": false,
+      "tint": 1,
+      "description": "All-purpose braai seasoning.",
+      "availability": "in",
+      "price": 2.1,
+      "packs": [
+        {
+          "label": "200 g",
+          "price": 2.1
+        },
+        {
+          "label": "500 g",
+          "price": 4.6
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "chilli-sauce",
+      "name": "Chilli Sauce",
+      "category": "Spices and sauces",
+      "featured": false,
+      "tint": 2,
+      "description": "Hot table sauce.",
+      "availability": "enquire",
+      "price": 1.9,
+      "packs": [
+        {
+          "label": "250 ml",
+          "price": 1.9
+        },
+        {
+          "label": "750 ml",
+          "price": 4.8
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "exercise-book",
+      "name": "A4 Exercise Book",
+      "category": "Stationery",
+      "featured": true,
+      "tint": 3,
+      "description": "72 pages, ruled.",
+      "availability": "in",
+      "price": 0.9,
+      "packs": [
+        {
+          "label": "Single",
+          "price": 0.9
+        },
+        {
+          "label": "Pack of 5",
+          "price": 4.2
+        },
+        {
+          "label": "Pack of 20",
+          "price": 15
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "ballpoint-pens",
+      "name": "Ballpoint Pens",
+      "category": "Stationery",
+      "featured": false,
+      "tint": 3,
+      "description": "Blue ink, smooth writing.",
+      "availability": "in",
+      "price": 2.4,
+      "packs": [
+        {
+          "label": "Box of 12",
+          "price": 2.4
+        },
+        {
+          "label": "Box of 50",
+          "price": 8.5
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "building-blocks",
+      "name": "Wooden Building Blocks",
+      "category": "Toys and gifts",
+      "featured": false,
+      "tint": 4,
+      "description": "Painted blocks for ages 3 and up.",
+      "availability": "in",
+      "price": 9,
+      "packs": [
+        {
+          "label": "50 pieces",
+          "price": 9
+        },
+        {
+          "label": "100 pieces",
+          "price": 16
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gift-hamper",
+      "name": "Gift Hamper",
+      "category": "Toys and gifts",
+      "featured": true,
+      "tint": 4,
+      "description": "Packed to order. Tell us the occasion and budget.",
+      "availability": "enquire",
+      "price": 18,
+      "packs": [
+        {
+          "label": "Small",
+          "price": 18
+        },
+        {
+          "label": "Medium",
+          "price": 32
+        },
+        {
+          "label": "Large",
+          "price": 55
+        }
+      ],
+      "image": ""
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+/* Shared glass system. Each template's theme.css supplies the tokens. */
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: var(--font-display); }
+img { max-width: 100%; display: block; }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* Blurred colour blobs behind content, so glass has something to blur */
+.blobs { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.blobs span {
+  position: absolute; border-radius: 9999px; filter: blur(80px); opacity: var(--blob-opacity, .5);
+}
+.blobs span:nth-child(1) { width: 38rem; height: 38rem; top: -10rem; left: -8rem; background: var(--accent); }
+.blobs span:nth-child(2) { width: 30rem; height: 30rem; top: 40%; right: -10rem; background: var(--blob-2, var(--accent)); }
+.blobs span:nth-child(3) { width: 34rem; height: 34rem; bottom: -12rem; left: 20%; background: var(--blob-3, var(--accent)); }
+
+/* Glass surfaces */
+.glass, .glass-dark, .glass-strong {
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+.glass { background: var(--glass-bg); }
+.glass-dark { background: var(--glass-dark-bg); color: #fff; border-color: rgba(255,255,255,.18); }
+.glass-strong { background: var(--glass-strong-bg); }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass, .glass-strong { background: var(--glass-strong-bg); }
+  .glass-dark { background: rgba(16,20,24,.88); }
+}
+
+/* Floating pill nav */
+.nav-wrap { position: sticky; top: 12px; z-index: 40; padding: 0 12px; margin-bottom: -76px; }
+.nav-pill {
+  max-width: 64rem; margin: 0 auto; border-radius: 9999px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 10px 8px 18px;
+}
+.nav-links { display: none; gap: 4px; }
+.nav-links a { padding: 8px 14px; border-radius: 9999px; font-size: 14px; text-decoration: none; color: inherit; opacity: .85; }
+.nav-links a:hover { background: rgba(255,255,255,.35); opacity: 1; }
+@media (min-width: 768px) { .nav-links { display: flex; } }
+
+/* Hero */
+.hero { position: relative; min-height: 88vh; display: flex; align-items: flex-end; overflow: hidden; color: #fff; }
+.hero-bg { position: absolute; inset: -6% 0; background: var(--hero-gradient); background-size: cover; background-position: center; will-change: transform; }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+.hero-scrim { position: absolute; inset: 0; background: var(--scrim); }
+.hero-inner { position: relative; width: 100%; max-width: 72rem; margin: 0 auto; padding: 8rem 1.25rem 4rem; }
+
+/* Scroll reveal (only when JS is running) */
+.js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; transition-delay: var(--d, 0ms); }
+.js .reveal.is-visible { opacity: 1; transform: none; }
+
+/* Modal */
+.modal-backdrop { position: fixed; inset: 0; z-index: 60; background: rgba(8,10,14,.5); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); display: flex; align-items: flex-end; justify-content: center; }
+.modal-sheet { width: 100%; max-width: 44rem; max-height: 92vh; overflow-y: auto; border-radius: 1.5rem 1.5rem 0 0; padding: 1.5rem; }
+@media (min-width: 768px) { .modal-backdrop { align-items: center; padding: 1.5rem; } .modal-sheet { border-radius: 1.5rem; } }
+
+/* Product photo placeholder tints */
+.tint-0 { background: var(--tint-0); } .tint-1 { background: var(--tint-1); } .tint-2 { background: var(--tint-2); }
+.tint-3 { background: var(--tint-3); } .tint-4 { background: var(--tint-4); } .tint-5 { background: var(--tint-5); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9999px; padding: 12px 22px; font-weight: 600; text-decoration: none; border: 0; background: var(--accent); color: var(--accent-ink); transition: transform .2s ease, filter .2s ease; }
+.btn:hover { transform: translateY(-1px); filter: brightness(1.06); }
+.btn-ghost { background: transparent; color: inherit; border: 1px solid currentColor; }
+.chip { border-radius: 9999px; padding: 6px 14px; font-size: 13px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: inherit; }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .hero-bg { transform: none !important; }
+  .btn { transition: none; }
+}

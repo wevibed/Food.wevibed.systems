@@ -1,0 +1,81 @@
+{
+  "status": "demo",
+  "business": {
+    "name": "Sample Pantry & Gifts",
+    "shortName": "Sample Pantry",
+    "tagline": "Everyday essentials, ordered on WhatsApp",
+    "description": "Sample food and general merchandise shop: groceries, spices, stationery and gifts. Pick a pack size and send your order on WhatsApp.",
+    "isSample": true,
+    "sampleNotice": "Sample business. Products, pack sizes and prices are placeholders."
+  },
+  "contact": {
+    "whatsapp": "263770000000",
+    "address": "Sample address, Harare",
+    "hours": "Mon to Sat 8:00 to 18:00, Sun 9:00 to 13:00",
+    "orderGreeting": "Hi Sample Pantry & Gifts, I would like to order:",
+    "orderFooter": "Pick-up or delivery: ",
+    "navMessage": "Hi, I have a question about your products."
+  },
+  "brand": {
+    "accent": "#1F7A3E",
+    "fontsUrl": "https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap",
+    "logo": ""
+  },
+  "seo": {
+    "domain": "sample-pantry.pages.dev",
+    "ogImage": ""
+  },
+  "hero": {
+    "image": "",
+    "imageAlt": "",
+    "eyebrow": "Groceries / Spices / Stationery / Gifts",
+    "headline": "Everyday essentials, ordered in a minute.",
+    "subheadline": "Choose your pack size, add to your order, and send it to us on WhatsApp.",
+    "primaryCta": "Start an order",
+    "secondaryCta": "Visit the shop"
+  },
+  "shop": {
+    "heading": "Shop",
+    "searchLabel": "Search products",
+    "searchPlaceholder": "Search rice, spices, notebooks, gifts",
+    "allLabel": "All",
+    "popularLabel": "Popular",
+    "productWord": "product",
+    "productsWord": "products",
+    "emptyMessage": "Nothing found. Message us and we will check if we can get it.",
+    "addLabel": "Add to my order",
+    "addedLabel": "Added ({n}), add another",
+    "photoLabel": "Product photo"
+  },
+  "currency": { "symbol": "$", "priceSuffix": " (sample)" },
+  "categories": [
+    { "name": "Groceries", "gradient": "linear-gradient(150deg,#FFE27A,#F5B800)" },
+    { "name": "Spices and sauces", "gradient": "linear-gradient(150deg,#FFB38A,#F0642E)" },
+    { "name": "Stationery", "gradient": "linear-gradient(150deg,#9CC4F0,#3C80D0)" },
+    { "name": "Toys and gifts", "gradient": "linear-gradient(150deg,#F7B5CF,#D9578F)" }
+  ],
+  "availability": {
+    "in": { "label": "In stock", "bg": "rgba(40,160,90,.2)", "fg": "#0F5132" },
+    "low": { "label": "Few left", "bg": "rgba(255,160,40,.25)", "fg": "#7A3F00" },
+    "enquire": { "label": "Ask for stock", "bg": "rgba(27,43,31,.1)", "fg": "#3D5644" }
+  },
+  "basket": {
+    "button": "My order",
+    "title": "My order",
+    "empty": "Your order is empty. Choose a pack size and press Add.",
+    "each": "each",
+    "totalLabel": "Estimated total",
+    "send": "Send my order on WhatsApp",
+    "note": "The total is an estimate. The shop confirms stock and the final price on WhatsApp. Demo number only.",
+    "fewer": "Fewer",
+    "more": "More"
+  },
+  "visit": [
+    { "title": "Visit the shop", "text": "Sample Pantry & Gifts, Sample address, Harare. Mon to Sat 8:00 to 18:00, Sun 9:00 to 13:00." },
+    { "title": "Delivery and pick-up", "text": "Sample delivery areas, fees and minimum order shown here. Pay on pick-up or as agreed on WhatsApp." }
+  ],
+  "footer": {
+    "left": "Sample Pantry & Gifts. Demo layout: products, pack sizes and prices are placeholders.",
+    "right": "Built by WeVibed"
+  }
+}

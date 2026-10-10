@@ -1,0 +1,31 @@
+/* Food & general merchandise: fresh green with sunny yellow */
+:root {
+  --page: #E8F6EC;
+  --ink: #1B2B1F;
+  --muted: #3D5644;
+  --accent: #1F7A3E;
+  --accent-ink: #FFFFFF;
+  --glass-bg: rgba(255, 255, 255, .58);
+  --glass-border: rgba(255, 255, 255, .8);
+  --glass-shadow: 0 10px 36px rgba(31, 122, 62, .14);
+  --glass-dark-bg: rgba(14, 50, 28, .4);
+  --glass-strong-bg: rgba(255, 255, 255, .86);
+  --scrim: linear-gradient(to top, rgba(6, 28, 14, .78), rgba(6, 28, 14, .08) 65%);
+  --hero-gradient: radial-gradient(circle at 78% 26%, #FFC21A 0, transparent 40%), radial-gradient(circle at 18% 74%, #35B069 0, transparent 48%), linear-gradient(150deg, #1F7A3E, #0E3A1F);
+  --font-display: 'Baloo 2', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+  --blob-opacity: .7;
+  --blob-2: #5FD08A;
+  --blob-3: #FF9E7A;
+  --tint-0: #FFF1C2;
+  --tint-1: #FFD9B8;
+  --tint-2: #F7B7A8;
+  --tint-3: #CFE0F2;
+  --tint-4: #F8CBDD;
+  --tint-5: #EAF0F5;
+}
+.blobs span:nth-child(1) { background: #FFD54A; }
+.btn-sun { background: #FFC21A; color: #1B2B1F; }
+.cat-tile { transition: transform .2s; }
+.cat-tile:hover { transform: translateY(-4px) scale(1.02); }
+.field { background: rgba(255,255,255,.7); border: 1px solid rgba(255,255,255,.9); color: var(--ink); }
